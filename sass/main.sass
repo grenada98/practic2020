@@ -1,0 +1,1190 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+@import "grid"
+
+.d-flex 
+	display: flex
+.juct-con-between
+	Justify-content: space-between
+.juc-cent
+	justify-content: center
+.alig-items
+	align-items: center
+.transit 
+	transition: .1s
+
+.header 
+	background-color: $gray
+
+.header__main-heigh 
+	@extend .d-flex
+	@extend .juct-con-between
+	
+
+.header__main-menu
+	margin-left: -5px
+
+.header__menu-items
+	@extend .d-flex
+
+.header__menu-items 
+	margin: 0
+	padding: 0
+	font-size: 12px
+	text-transform: uppercase
+	.header__items
+		list-style-type: none
+		margin: 0 5px
+		&:first-child .header__menu-link
+			padding-left: 0
+	.header__menu-link
+		display: block
+		position: relative
+		padding: 15px 13px 16px 13px
+		text-decoration: none
+		color: #c2c2c2
+		@extend .transit
+		&.active
+			color: #fff
+			&:after
+				content: ''
+				position: absolute
+				height: 2px
+				right: 0
+				bottom: 0
+				left: 0
+				background-color: #ffc925
+		&:hover 
+			color: #fff
+
+.header__main-menu--mobile
+	display: none
+
+.entrance
+	display: block
+	border: none
+	outline: none
+	text-transform: uppercase
+	letter-spacing: -.7px
+	font-size: 12px
+	color: #fff
+	padding: 15px 33px 18px 62px
+	max-height: 50px
+	background: #ff8900 url(../icons/ico-admin.png) no-repeat 33% 48%
+	cursor: pointer
+	@extend .transit
+	&:hover 
+		background-color: #db7200
+
+.hamburger
+	display: none
+	padding: 0
+	padding-top: 12px
+	cursor: pointer
+.hamburger-box
+	width: 30px
+.hamburger-inner
+	width: 30px
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+	height: 2px
+	width: 30px
+	background-color: #fff
+.mm-listview>li:not(.mm-divider):after
+	left: 0
+.mm-menu.mm-theme-black 
+    background-color: #272937
+.mm-menu.mm-theme-black .mm-navbar a, .mm-menu.mm-theme-black .mm-navbar>*, .mm-menu.mm-theme-black em.mm-counter
+	color: #fff
+
+.wraper-mobile
+	@extend .d-flex
+.logo-mob-pocupca
+	margin-top: 34px
+.logo
+	padding-top: 7px
+.wraper-mobile
+	margin-top: 2px
+.wraper-mobile__mobile-numbe
+	@extend .d-flex
+	font-weight: 700
+	font-style: italic
+	letter-spacing: -.5px
+	background-color: #f5f5f5
+	-webkit-box-align: center
+	-webkit-align-items: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	a 
+		color: #000
+		text-decoration: none
+		white-space: nowrap
+		font-size: 16px
+		text-decoration: none
+		padding: 12px 10px 12px 13px
+		letter-spacing: -0.4px
+		@extend .transit
+		&:hover
+			text-decoration: underline
+	.wraper-mobile_mob-number:nth-child(1)
+		padding-right: 6%
+		padding-left: 3%
+	.wraper-mobile_mob-number:nth-child(2)
+		padding-left: 7%
+		padding-right: 13%
+.btn-mobile-button
+	display: block
+	border: none
+	outline: none
+	max-width: 197px
+	max-height: 50px
+	color: #fff
+	font-size: 12px
+	text-transform: uppercase
+	font-family: 'Myriad Pro'
+	white-space: nowrap
+	background: #ff8900 url(../icons/Vecto.png) no-repeat 17.3% 54%
+	padding: 15px 45px 18px 51px;
+	cursor: pointer
+	@extend .transit
+	&:hover 
+		background-color: #db7200
+
+.panel-product
+	display: block
+	position: relative
+	font-size: 10px
+	color: #3d3d3d
+	@extend .transit
+	span
+		display: block
+		text-transform: uppercase
+	&:hover span
+		color: #000
+.comparison
+	padding-top: 2px
+	padding-left: 15px	
+	span
+		margin-left: -7px
+	border-right: 1px solid #e4e4e4
+.favorites
+	padding-left: 19px
+	span
+		margin-left: -13px
+		padding-top: 4px
+	border-right: 1px solid #e4e4e4
+.basket
+	padding-left: 15px
+	position: relative
+	span
+		padding-top: 2px
+	&:before
+		content: '5'
+		position: absolute
+		width: 35px
+		height: 34px
+		top: 50%
+		left: 50%
+		margin-right: -50%
+		transform: translate(-72%, -158%)
+		padding-top: 1px
+		padding-left: 14px
+		color: #fff
+		background: url(../icons/digits-bg.png) no-repeat center
+
+
+.main
+	margin-top: 33px
+.main__head-menu-left
+    position: relative
+    background-image: -webkit-linear-gradient(left,#ff8500,#ffae00)
+    background-image: -o-linear-gradient(left,#ff8500,#ffae00)
+    background-image: -webkit-gradient(linear,left top,right top,from(#ff8500),to(#ffae00))
+    background-image: linear-gradient(to right,#ff8500,#ffae00)
+    font-size: 20px
+    font-weight: 700
+    color: #fff
+    padding: 11px 0 12px 84px
+    margin-left: -2px
+    min-width: 160px
+.main__bg-burger-menu-left
+	display: block
+	position: absolute
+	top: 0
+	left: 1px
+	bottom: 0
+	width: 61px
+	background-color: #db7200
+.main__active-left
+	background-color: #fff
+	left: 0 !important
+	transition: 0.6s
+	z-index: 100
+.main__none-left
+	left: -100% !important
+	transition: 0.6s
+	z-index: 100
+.main__burger-menu-left
+	position: absolute
+	width: 14px
+	height: 10px
+	top: 22px
+	left: 23px
+	span
+		display: block
+		height: 2px
+		background-color: #fff
+		&:nth-child(1)
+			width: 10px
+		&:nth-child(2)
+			margin-top: 2px
+			width: 100%
+		&:nth-child(3)
+			margin-top: 2px
+			width: 7px 
+.main__menu-left-menu
+	text-transform: uppercase
+	padding-top: 14px
+	border: 1px solid #f8f8f8
+	border-top: none
+.menu-left__link
+	padding-left: 37px
+	border-bottom: 1px solid #f8f8f8
+	&:first-child .main__link-menu-left
+		padding-bottom: 11px
+	&:nth-child(2) .main__link-menu-left
+		padding-top: 15px
+	&:nth-child(3) .main__link-menu-left
+		padding-bottom: 12px
+	&:nth-child(4) .main__link-menu-left
+		padding-top: 15px
+		padding-bottom: 11px
+	&:nth-child(5) .main__link-menu-left
+		padding-top: 16px
+	&:last-child .main__link-menu-left
+		padding-bottom: 17px	
+	&:hover
+		background-image: -webkit-linear-gradient(left,#ff8500,#ffae00)
+		background-image: -o-linear-gradient(left,#ff8500,#ffae00)
+		background-image: -webkit-gradient(linear,left top,right top,from(#ff8500),to(#ffae00))
+		background-image: linear-gradient(to right,#ff8500,#ffae00)
+.main__link-menu-left
+	position: relative
+	display: block
+	padding-top: 13px
+	padding-bottom: 14px
+	text-decoration: none
+	font-weight: 700
+	color: #3b3b3b
+	font-size: 16px
+	background-image: url(../icons/Rounded.png)
+	background-repeat: no-repeat
+	background-position: 87% 47%
+
+.main__search--form
+	position: relative
+	@extend .d-flex
+	height: 56px
+.main__input-search
+	padding: 0 28px
+	width: 68.5%
+	font-size: 14px
+.main__input-search,
+.main__select-categories
+	background-color: #f5f5f5
+	border: none
+	outline: none
+.main__select-categories
+	height: 100%
+	font-size: 14px
+	padding-right: 44px
+	padding-left: 24px
+	color: #616161
+	-webkit-appearance: none
+	-webkit-appearance--moz-appearance: none
+	-webkit-appearance-appearance: none
+	background-image: url(../icons/arrow.png)
+	background-repeat: no-repeat
+	background-position: 81.2% 52%
+.main__se-categ
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		height: 70%
+		width: 1px
+		background-color: #dadada
+		top: 10px
+		left: 11px
+.main__search--submit
+	border: none
+	width: 16.6%
+	font-size: 16px
+	font-weight: 700
+	background-color: #ff8900
+	text-transform: uppercase
+	color: #fff
+	cursor: pointer
+	padding-left: 0
+	@extend .transit
+	&:hover
+		background-color: #db7200
+
+.main__categorus
+	@extend .d-flex
+.main__filter
+	background-color: #696969
+	margin-top: 20px
+	transition: .6s
+.main__filter__no
+	margin-left: 0 !important
+.main__categorus
+	padding: 0 26px
+	background-color: #606a76
+	flex-wrap: wrap
+.categorus-btn
+	position: relative
+	font-size: 18px
+	text-decoration: none
+	font-weight: bold
+	color: #abafb5
+	display: block
+	padding-top: 24px	
+	padding-bottom: 21px
+	&:hover 
+		color: #fff
+.categorus-btn.active
+	color: #fff 
+	&:after
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		height: 2px
+		background-color: #ffc925
+.categorus
+	&:nth-child(1) .categorus-btn
+		padding-left: 71px
+		padding-right: 31px
+		background: url(../icons/img-categoru-1.png) no-repeat 13% 50%
+		&:hover
+			background: url(../icons/img-categoru-1-hover.png) no-repeat 13% 50%
+		&.active
+			background: url(../icons/img-categoru-1-active.png) no-repeat 13% 50%
+	&:nth-child(2)
+		&
+			margin-left: 26px
+		.categorus-btn
+			padding-left: 78px
+			padding-right: 19px
+			background: url(../icons/img-categoru-2.png) no-repeat 13% 50%
+			&:hover
+				background: url(../icons/img-categoru-2-hover.png) no-repeat 13% 50%
+			&.active
+				background: url(../icons/img-categoru-2-active.png) no-repeat 13% 50%
+	&:nth-child(3)
+		&
+			margin-left: 38px
+		.categorus-btn
+			padding-left: 51px
+			padding-right: 19px
+			background: url(../icons/img-categoru-3.png) no-repeat 13% 50%
+			&:hover
+				background: url(../icons/img-categoru-3-hover.png) no-repeat 13% 50%
+			&.active
+				background: url(../icons/img-categoru-3-active.png) no-repeat 13% 50%
+	&:nth-child(4)
+		&
+			margin-left: 16px
+		.categorus-btn
+			padding-left: 49px
+			padding-right: 19px
+			background: url(../icons/img-categoru-4.png) no-repeat 13% 50%
+			&:hover
+				background: url(../icons/img-categoru-4-hover.png) no-repeat 13% 50%
+			&.active
+				background: url(../icons/img-categoru-4-active.png) no-repeat 13% 50%
+	&:nth-child(5)
+		&
+			margin-left: 32px
+		.categorus-btn
+			padding-left: 52px
+			padding-right: 19px
+			background: url(../icons/img-categoru-5.png) no-repeat 13% 50%
+			&:hover
+				background: url(../icons/img-categoru-5-hover.png) no-repeat 13% 50%
+			&.active
+				background: url(../icons/img-categoru-5-active.png) no-repeat 13% 50%
+.filter
+	font-size: 14px
+	label
+		color: #fff
+		padding-bottom: 6px
+    	padding-left: 1px
+	select, button, input
+		padding: 0
+		margin: 0
+		outline: none
+		border: none
+		color: #9c9c9c
+		background-color: #fff
+		cursor: pointer
+	select
+		width: 100%
+		height: 100%
+		padding-left: 15px
+		padding-bottom: 2px
+		-webkit-appearance: none
+    	-webkit-appearance--moz-appearance: none
+    	-webkit-appearance-appearance: nones
+		background-image: url(../icons/arow-main.png)
+		background-repeat: no-repeat 
+		background-position: 88% 50%
+	.row--gap
+		&:nth-child(2)
+			margin-top: 23px
+		&:nth-child(3), &:nth-child(4)
+			margin-top: 24px
+	padding: 24px 32px 28px 35px
+	.wrapper-tab	
+		background-color: #efefef
+		max-width: 281px
+		height: 44px
+		padding: 3px 3px
+		.btn-tab-1, .btn-tab-2
+			height: 100%
+			cursor: pointer
+			background-color: #efefef
+			color: #696969
+			font-weight: 500
+		.btn-tab-1
+			padding-left: 54px
+			padding-right: 42px
+		.btn-tab-2
+			padding-left: 60px
+			padding-right: 47px
+		.active-btn
+			color: #fff
+			background-color: #ff8900
+	.wrapper-select
+		height: 42px
+	.wrapper-moneu
+		width: 33.3%
+		height: 100%
+	.wrapper-select, 
+	.wrapper-moneu
+		position: relative
+		@extend .d-flex
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 1px
+			height: 1px
+			background-color: #696969
+			z-index: 1
+	.wrapper-select, 
+	.wrapper-moneu
+		&:hover.wrapper-select:before, 
+		&:hover.wrapper-moneu:before 
+			background-color: #ff8900
+
+
+	.select-3, .select-4, .select-5, .select-6, .select-7
+		font-family: 'Myriad Pro'
+	.select-none
+		display: none
+	.moneu
+		@extend .d-flex
+		align-items: center
+		height: 100%
+		height: 42px
+		.moneu-1, .moneu-2
+			width: 100%
+			height: 100%
+		.wrapper-moneu-1
+			margin-right: 13px
+			margin-left: 27px
+		.moneu-1
+			padding-left: 23px
+			padding-bottom: 2px
+		.moneu-2
+			padding-left: 13px
+			padding-bottom: 2px
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button 
+	    -webkit-appearance: none
+	.btn-reset, .btn-apply
+		@extend .transit
+		color: #fff
+	.btn-reset
+		padding: 16px 40px 18px 59px
+		background: #ff4800 url(../icons/×.png) no-repeat 18.9% 46%
+		&:hover 
+			background: #c13700 url(../icons/×.png) no-repeat 18.9% 46%
+	.btn-apply
+		margin-left: 10px
+		padding: 17px 32px 17px 31px
+		text-transform: uppercase
+		font-weight: bold
+		letter-spacing: -0.4px
+		background-image: -webkit-linear-gradient(left, #ff8500, #ffae00)
+		background-image: -moz-linear-gradient(left, #ff8500, #ffae00)
+		background-image: -o-linear-gradient(left, #ff8500, #ffae00)
+		background-image: -ms-linear-gradient(left, #ff8500, #ffae00)
+		background-image: linear-gradient(to right, #ff8500, #ffae00)
+		&:hover
+			background-image: -webkit-linear-gradient(left, #d36e00, #e59100)
+			background-image: -moz-linear-gradient(left, #d36e00, #e59100)
+			background-image: -o-linear-gradient(left, #d36e00, #e59100)
+			background-image: -ms-linear-gradient(left, #d36e00, #e59100)
+			background-image: linear-gradient(to right, #d36e00, #e59100)
+
+.product
+	margin-top: 20px
+	margin-bottom: 60px
+.product__block
+	margin-top: 4px
+	border: 1px solid #dbdbdb
+	padding-bottom: 20px
+	&:first-child 
+		border-left: none
+.product__block-first
+	margin-right: 5px
+.product__block-2
+	padding-left: 5px
+.product-head
+	@extend .d-flex
+.product--head
+	align-items: center
+	.product__title
+		@extend .d-flex
+		margin-left: -2px
+	.product__title-titlle
+		position: relative
+		font-size: 36px
+		color: #3b3b3b
+		font-weight: 400
+		&:after
+			content: ''
+			position: absolute
+			left: 1px 
+			right: 0
+			bottom: -5px
+			height: 1px
+			background-color: #ff8500
+.product__link
+	@extend .d-flex
+	justify-content: flex-end
+	padding-top: 16px
+	padding-right: 30px
+	.product-link__link
+		position: relative
+		color: #000
+		font-size: 14px
+		text-decoration: underline
+		@extend .transit
+		&:hover
+			text-decoration: none
+		&:after
+			content: ''
+			position: absolute
+			top: 11px
+			right: -31px
+			width: 20px
+			height: 8px
+			background-image: url(../icons/Shape.png)
+			background-repeat: no-repeat
+
+.product__mark
+	padding-top: 19px
+	padding-left: 7px
+	span
+		display: block
+		width: 79px
+		text-align: center
+		font-size: 14px
+		color: #848484
+		background-color: #f2f2f2
+.product__title
+	.title-tire
+		font-size: 17px
+		color: #3b3b3b
+		display: block
+		padding-left: 7px
+		padding-top: 14px
+		line-height: 1.5
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+.product__rading
+	@extend .d-flex
+	align-items: center
+	margin-top: 10px
+.product__rating
+	margin-left: 9px
+	display: block
+	position: relative
+	min-width: 95px
+	height: 14px
+	background-image: url(../icons/Shape-not-active.png)
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	overflot: hidden
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-image: url(../icons/Shape-yes-active.png)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+.product__rating-three
+	&:after
+		right: 40px
+.product__rating-none
+	&:after
+		right: 100px
+.reviews
+	font-size: 13px
+	color: #9b9b9b
+	padding-left: 3%
+	padding-top: 2px
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.product__availability	
+	font-size: 12px
+	color: #757575
+	padding-top: 1px
+	padding-left: 9.5%
+.product__main
+	@extend .d-flex
+.product__season-left
+	margin-top: 20px
+	padding-left: 7px
+	span 
+		display: block
+.product__icons-summer
+	margin-left: 6px
+	width: 38px
+	height: 38px
+	background: #fff url(../icons/summer.png) no-repeat center
+.product__season-inf
+	padding-top: 6px
+	padding-left: 7px
+.product__car
+	margin-top: 14px
+.product__icons-car
+	width: 53px
+	height: 26px
+	background: #fff url(../icons/car.png) no-repeat center
+.inf-car	
+	padding-top: 12px
+	padding-left: 1px
+.product__new
+	margin-top: 19px
+.product__icons-new
+	width: 48px
+	height: 25px
+	background: #fff url(../icons/new.png) no-repeat center
+.new-inf
+	padding-top: 7px
+	padding-left: 10px
+.product__season-inf
+	font-size: 10px
+	color: #91959a
+	text-transform: uppercase
+.product__main-tire-first
+	padding-top: 22px
+	padding-left: 30px
+.product__main-tire-2
+	padding-top: 8px
+	padding-left: 27px
+.product__shares
+	@extend .d-flex
+	margin-top: -10px
+	justify-content: center
+	.product__shares--wid-hei
+		letter-spacing: 1px
+	span
+		display: block
+	.product__shares--wid-hei
+		width: 97px
+		height: 49px
+		font-size: 10px
+		font-weight: 700
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		padding-top: 12px
+	.product__shares--news
+		margin-left: -7px
+		background: url(../icons/novinca.png) no-repeat center
+	.product__shares--news-hit
+		margin-left: -13px
+		background: url(../icons/hit.png) no-repeat center
+	.product__shares--news-znizhka
+		margin-left: -13px
+		background: url(../icons/discount.png) no-repeat center
+.product__shares-two
+	margin-top: -23px
+	.product__shares--news
+		margin-left: 3px
+.product__price
+	margin-top: -10px
+	@extend .d-flex
+	justify-content: space-between
+	align-items: center
+.product__price-price
+	color: #3b3b3b
+	font-weight: 900
+	font-style: italic
+	font-size: 30px
+	padding-left: 9px
+	text-transform: uppercase
+	span
+		font-size: 18px
+.product__znizhka
+	font-size: 16px
+	color: #989898
+	font-style: italic
+	font-weight: 700
+	padding-top: 10px
+	padding-right: 18px
+	text-decoration: line-through
+	text-transform: uppercase
+.product__btn
+	@extend .d-flex
+	justify-content: center
+	margin-top: 13px
+	margin-left: -10px
+	button
+		position: relative
+		border: none
+		outline: none
+		position: relative
+		font-size: 14px
+		text-transform: uppercase
+		color: #fff
+		font-weight: 400
+		padding: 16px 41px 17px 67px
+		text-decoration: none
+		letter-spacing: -0.4px
+		background-image: -webkit-linear-gradient(left,#ff8500,#ffae00);
+		background-image: -o-linear-gradient(left,#ff8500,#ffae00)
+		background-image: -webkit-gradient(linear,left top,right top,from(#ff8500),to(#ffae00))
+		background-image: -webkit-gradient(linear,left top,right top,from(#ff8500),to(#ffae00))
+		&:after
+			content: ''
+			position: absolute
+			width: 28px
+			height: 24px
+			top: 11px
+			left: 24px
+			background-image: url(../icons/corz.png)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+		&:hover 
+			background-image: -webkit-linear-gradient(left, #d36e00, #e59100)
+			background-image: -moz-linear-gradient(left, #d36e00, #e59100)
+			background-image: -o-linear-gradient(left, #d36e00, #e59100)
+			background-image: -ms-linear-gradient(left, #d36e00, #e59100)
+			background-image: linear-gradient(to right, #d36e00, #e59100)
+.product__add
+	@extend .d-flex
+	justify-content: space-between
+	margin-top: 15px
+	a
+		position: relative
+		color: #3b3b3b
+		font-size: 14px
+		text-decoration: underline
+	.product__compare
+		padding-left: 53px
+		&:before
+			content: ''
+			position: absolute
+			width: 34px
+			height: 26px
+			top: 0
+			left: 8px
+			background-image: url(../icons/Vector-Smart-Object3.png)
+			background-repeat: no-repeat
+			background-position: center
+		&:hover 
+			text-decoration: none
+	.product__favorites
+		padding-right: 17px
+		&:before
+			content: ''
+			position: absolute
+			width: 34px
+			height: 31px
+			top: -3px
+			left: -43px
+			background-image: url(../icons/Vector-Smart-Object.png)
+			background-repeat: no-repeat
+			background-position: center
+		&:hover 
+			text-decoration: none
+.product__block-2
+	.product__new
+		margin-top: 16px
+.product__block-there
+	padding-left: 10px
+	margin-right: -3px
+	.product__main-tire
+		padding-bottom: 18px
+	.product__shares .product__shares--news
+		margin-left: 7px
+	.product__main-tire-first
+		padding-left: 20px
+	.product__znizhka
+		padding-right: 15px
+	.product__btn
+		margin-left: -6px
+	.product__add .product__favorites
+		padding-right: 13px
+.product__block-last
+	padding-left: 16px
+	.product__rading
+		margin-top: 35px	
+	.product__main-tire-first 
+		padding-top: 14px
+		padding-left: 7px
+		padding-bottom: 45px
+	.product__btn
+		margin-left: 0
+	.product__add .product__favorites
+		padding-right: 5px
+
+
+.footer 
+	padding-top: 26px
+	background-color: #696969
+.footer__head
+	margin-bottom: 20px
+	padding-bottom: 6px
+	color: #cbcbcb
+	font-size: 20px
+	border-bottom: 1px solid #7a7a7a
+	span
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			right: 0
+			left: 0
+			bottom: -11px
+			height: 1px
+			background-color: #ff8500
+.footer_margin-botom
+	padding-bottom: 24px
+	border-bottom: 1px solid #7a7a7a
+.footer__block-link
+	line-height: 2.3
+.footer__ma-lef
+	margin-left: -4px	
+.footer__link
+	a 
+		color: #fff
+		text-decoration: underline
+		font-size: 13px
+		&:hover 
+			text-decoration: none
+.footer__novin
+	font-size: 20px
+	font-weight: 700
+	color: #cbcbcb
+	text-transform: uppercase
+	padding-top: 5px
+.footer__rasilka
+	font-size: 17.1px
+	color: #fff
+	font-weight: 900
+	text-transform: uppercase
+	margin-top: -7px
+.footer__rosil-h2
+	margin: 1px 0
+.footer__form-email
+	position: relative
+	margin-top: -9px
+	margin-left: -2px
+	.footer__heigh-email
+		height: 50px
+		margin-right: -20px
+	input, button
+		border: none
+		outline: none
+		height: 100%
+.footer_email
+	width: 70.5%
+	letter-spacing: -.8px
+	padding-left: 30px
+.footer__email-btn
+	width: 29.5%
+	background-color: #ff8900
+	color: #fff
+	text-transform: uppercase
+	font-weight: 600
+	padding-left: 3px
+	letter-spacing: -.4px
+	cursor: pointer
+	@extend .transit
+	&:hover
+		background-color: #db7200
+.footer-bottom
+	padding-top: 14px
+	font-size: 12px
+	padding-bottom: 10px
+.footer__flex-ali-ce
+	@extend .d-flex
+	align-items: center
+.footer__img-logo-footer
+	position: relative
+	padding-top: 4px
+	&:before
+		content: ''
+		position: absolute
+		width: 1px
+		top: 0
+		bottom: 0
+		right: -23px
+		background-color: #787878
+.footer_info-website
+	color: #a0a9b2
+	padding-left: 39px
+.footer__wrapper-social
+	@extend .d-flex
+	margin-top: 6px
+.footer__wrapper-social
+.footer__social
+	padding: 5px
+	&:first-child
+		padding-left: 0
+.footer__link-social
+	display: block
+	width: 49px
+	height: 49px
+	border: 1px solid #7b8092
+	background-image: url(../icons/Icons-social-footer.png)
+	background-repeat: no-repeat
+	&.active
+		border-color: #ffc925
+.footer__social:nth-child(1) .footer__link-social
+	   background-position: 3% 4%
+.footer__social:nth-child(2) .footer__link-social
+	  background-position: 102% 4%
+.footer__social:nth-child(3) .footer__link-social
+	  background-position: 5% 96%
+.footer__social:nth-child(4) .footer__link-social
+	background-position: 104% 98%
+.footer__img-w
+	position: relative
+	margin-top: 44px
+	&:after
+		content: ''
+		position: absolute
+		top: -15px
+		height: 42px	
+		right: -19px
+		width: 1px
+		background-color: #787878
+.footer__wezom-agensu
+		padding-left: 37px
+		padding-top: 29px
+		p
+			margin: 0
+			&:nth-child(1)
+				color: #a0a9b2	
+			&:nth-child(2)
+				font-family: 'Myriad Pro'
+				font-size: 14px
+				color: #fff
+.footer__margin-top
+	margin-top: -14px
+
+
+/*popap*/
+.popap__admin-col
+	background-color: #fff
+.popap__admin-padding-rel
+	position: relative
+	padding: 40px
+.mfp-close 
+	display: none !important
+.popup-modal-dismiss
+	display: block
+	position: absolute
+	top: -40px
+	right: -40px
+	width: 27px
+	height: 27px 
+	background-image: url(../icons/line1.png)
+	background-repeat: no-repeat
+	background-position: center
+.block-popap-left
+	padding-right: 43px
+	border-right: 1px solid #dbdbdb
+	.title-popap
+		margin-bottom: 10px
+	.form-entrance
+		.label-mail-entrance, .label-mail-password, .remember-me
+			font-size: 14px
+			display: block
+		.label-mail-entrance
+			padding-bottom: 10px
+		.label-mail-password
+			padding-top: 15px
+			padding-bottom: 10px
+		.remember-me
+			padding-top: 28px
+			padding-bottom: 20px
+			display: flex
+			align-items: center
+		input[type = 'text'],
+		input[type = 'password']
+			width: 299px
+			max-width: 299px
+			height: 40px
+			padding-left: 13px
+			border: 1px solid #d2d2d2
+			outline: none
+		.checkbox-i
+			display: block
+			width: 16px
+			height: 16px
+			border: 1px solid #d2d2d2
+			margin-right: 10px
+		input[type = 'checkbox']
+			display: none
+			&:checked + .checkbox-i
+				background-color: #d2d2d2
+		.block-registration
+			a 
+				color: #3d3d3d
+				displayL block
+				text-decoration: underline
+			.Forgot_your_password
+				padding-right: 25px
+		.btn-Login_to-your-account
+			color: #fff
+			border: none
+			background-color: #afb9c6
+			padding: 15px 22px 18px 25px
+			margin-top: 15px
+			cursor: pointer
+			outline: none
+			&:hover 
+				background-color: #a3acb9
+
+.block-popap-right
+	padding-left: 40px
+	.title-popap
+		margin-bottom: 35px
+	.social-entrance
+		display: block
+		text-decoration: none
+		text-align: center
+		color: #fff
+		font-size: 14px
+		padding: 12px 106px 15px 124px
+		margin-top: 23px
+		background-image: url(../icons/social-form.png)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+	.entrance-fb
+		background-color: #3b5998
+		background-position: 35% -8%
+	.entrance-tw
+		background-color: #41abe1
+		background-position: 38% 49%
+	.entrance-go
+		background-color: #ea4335
+		background-position: 38% 110%
+
+
+.title-popap
+	margin: 0
+	font-size: 24px
+	font-weight: bold
+	margin-bottom: 20px
+.form-popap-mobile
+	label
+		display: block
+		padding-bottom: 10px
+		font-size: 14px
+	.input-popap-mobile
+		width: 299px
+		height: 40px
+		outline: none
+		padding-left: 20px
+		color: #9c9c9c
+		margin-bottom: 30px
+	.btn-block-pop
+		display: flex
+		justify-content: center
+	.submit-popap-mobile
+		width: 210px
+		height: 50px
+		background-color: #ff8900
+		border: none
+		outline: none
+		font-size: 14px
+		color: #fff
+		cursor: pointer
+
+/*validation*/
+.error 
+	color: #ff0000
+	font-size: 12px
+	
+#main__form_search #search-error
+	position: absolute
+	top: -25px
+	left: 60px
+	right: 0
+
+#fotter__form-mail #email-error
+	position: absolute
+	bottom: -20px
+	left: 30px
+
+#form__admin
+	position: relative
+	#mail-entrance-error
+		position: absolute
+		top: 15px
+		left: 0
+	#entrancel-password-error
+		position: absolute
+		top: 102px
+		left: 0
+#form__mobile
+	position: relative
+	#phone-error
+		position: absolute
+		bottom: 50px
+
+.pop_up
+	position: fixed
+	top: -100%
+	left: 50%
+	margin-right: -50%
+	transform: translate(-50%, 0%)
+	background-color: #f5f5f5
+	color: #000
+	font-size: 20px
+	padding: 20px
+	transition: top 1s
+	
+@import "media" // Всегда в конце

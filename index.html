@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	
+	<div id="my-page">
+
+		<div id="my-header">
+
+			<header class="header">
+				<div class="container">
+					<div class="header__main-heigh">
+						<nav class="header__main-menu">
+							<ul class="header__menu-items">
+								<li class="header__items"><a href="#" class="header__menu-link">Главная</a></li>
+								<li class="header__items"><a href="#" class="header__menu-link active">О компании</a></li>
+								<li class="header__items"><a href="#" class="header__menu-link">Ссылка 1</a></li>
+								<li class="header__items"><a href="#" class="header__menu-link">Ссылка 2</a></li>
+								<li class="header__items"><a href="#" class="header__menu-link">Ссылка 3</a></li>
+							</ul>
+						</nav>
+						<nav id="my-menu" class="header__main-menu--mobile">
+							<ul class="header__menu-items--mobile">
+								<li class="header__items--mobile"><a href="#" class="header__menu-link--mobile">Главная</a></li>
+								<li class="header__items--mobile"><a href="#" class="header__menu-link--mobile active">О компании</a></li>
+								<li class="header__items--mobile"><a href="#" class="header__menu-link--mobile">Ссылка 1</a></li>
+								<li class="header__items--mobile"><a href="#" class="header__menu-link">Ссылка 2</a></li>
+								<li class="header__items--mobile"><a href="#" class="header__menu-link--mobile">Ссылка 3</a></li>
+							</ul>
+						</nav>
+						<a href="#my-menu" class="hamburger hamburger--emphatic-r js-hamburger">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</a>
+						<div class="header__btn-entrance">
+							<a href="#form-popup" class="popup-with-form entrance">Вход</a>
+						</div>
+					</div>						
+				</div>
+			</header>
+
+		</div>
+
+		<div id="my-content">
+
+			<div class="logo-mob-pocupca">
+				<div class="container">
+					<div class="row--gap">
+						<div class="col-3">
+							<a href="#">
+								<img src="img/Test.png" alt="logo-site" class="logo">
+							</a>
+						</div>
+						<div class="col-6">
+							<div class="wraper-mobile">
+								<div class="wraper-mobile__mobile-numbe">
+									<a href="#" class="wraper-mobile_mob-number">+380 98 170 00 740</a>
+									<a href="#" class="wraper-mobile_mob-number">+380 98 170 00 740</a>
+								</div><!--
+							--><div class="wraper-mobile_btn-mobile">
+								<a href="#form-popup-mobile" class="popup-with-form btn-mobile-button">Перезвонить мне</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1">
+						<a href="#" class="panel-product comparison">
+							<img src="icons/comparison.png" alt="сравнение">
+							<span>сравнение</span>
+						</a>
+					</div>
+					<div class="col-1">
+						<a href="#" class="panel-product favorites">
+							<img src="icons/favorites.png" alt="избранное">
+							<span>избранное</span>
+						</a>
+					</div>
+					<div class="col-1">
+						<a href="#" class="panel-product basket">
+							<img src="icons/basket.png" alt="корзина">
+							<span>корзина</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="container">
+				<div class="row--gap">
+					<div class="col-3 main__menu-left_widt">
+						<div class="main__menu-left">
+							<div class="main__head-menu-left">
+								<span class="main__bg-burger-menu-left">
+									<span class="main__burger-menu-left">
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
+								</span>
+								<span сclass="main__title-menu-left">Меню</span>
+							</div>
+							<div class="main__menu-left-menu">
+								<div class="menu-left__link">
+									<a href="#" class="main__link-menu-left">Ссылка 1</a>
+								</div>
+								<div class="menu-left__link">
+									<a href="#" class="main__link-menu-left">Ссылка 2</a>
+								</div>
+								<div class="menu-left__link">
+									<a href="#" class="main__link-menu-left"> Ссылка 3</a>
+								</div>
+								<div class="menu-left__link">
+									<a href="#"s class="main__link-menu-left"> Ссылка 4</a>
+								</div>
+								<div class="menu-left__link">
+									<a href="#" class="main__link-menu-left"> Ссылка 5</a>
+								</div>
+								<div class="menu-left__link">
+									<a href="#" class="main__link-menu-left">Ссылка 6</a>
+								</div>
+								<div class="menu-left__link">
+									<a href="#" class="main__link-menu-left"> Ссылка 7</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-9 main__mobile-active">
+						<form id="main__form_search" class="main__search--form">
+							<input class="main__input-search" type="text" name="search" placeholder="Поиск по сайту">
+							<div class="main__se-categ">
+								<select name="categories" class="main__select-categories">
+									<option value="1">Все категории</option>
+								</select>
+							</div>
+							<button type="submit" class="main__search--submit">Поиск</button>
+						</form>
+						<div class="main__filter">
+							<div class="main__categorus">
+								<div class="categorus">
+									<a href="#" class="categorus-btn active">Ссылка 1</a>
+								</div>
+								<div class="categorus">
+									<a href="#" class="categorus-btn">Ссылка 2</a>
+								</div>
+								<div class="categorus">
+									<a href="#" class="categorus-btn">Ссылка 3</a>
+								</div>
+								<div class="categorus">
+									<a href="#" class="categorus-btn">Ссылка 4</a>
+								</div>
+								<div class="categorus">
+									<a href="#" class="categorus-btn">Ссылка 5</a>
+								</div>
+							</div>
+							<form class="filter">
+								<div class="row--gap">
+									<div class="col-4 d-flex juc-cent-mobile">
+										<div class="wrapper-tab">
+											<input type="button" class="btn-tab-1" value="Tab 1">
+										<!--
+										--><input type="button" class="btn-tab-2 active-btn" value="Tab 2">
+									</div>
+								</div>
+							</div>
+							<div class="row--gap">
+								<div class="col-3">
+									<div class="wrapper-select">
+										<select name="select">
+											<option value="1">Select 1</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-3">
+									<div class="wrapper-select">
+										<select name="select">
+											<option value="2">Select 2</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-3">
+									<div class="wrapper-select">
+										<select name="select" class="select-3">
+											<option value="3">Select 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-3">
+									<div class="wrapper-select">
+										<select name="select" class="select-4">
+											<option value="4">Select 4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row--gap mobile-media">
+								<div class="col-3 disp-mob-yes-no">
+									<div class="wrapper-select select-none">
+										<select name="select" class="select-5">
+											<option value="5">Select 5</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-3">
+									<div class="wrapper-select">
+										<select name="select" class="select-6">
+											<option value="6">Select 6</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-3">
+									<div class="moneu">
+										<label>Цена</label>
+										<div class="wrapper-moneu wrapper-moneu-1">
+											<input class="moneu-1" type="number" placeholder="50">
+										</div>
+										<div class="wrapper-moneu">
+											<input class="moneu-2" type="number" placeholder="250000">
+										</div>
+									</div>
+								</div>
+								<div class="col-3 disp-mob-yes-no">
+									<div class="wrapper-select select-none">
+										<select name="select" class="select-7">
+											<option value="7">Select 7</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row--gap mobile-media_btn">
+								<div class="col-3 juc-cent">
+									<button class="btn-reset" type="reset">Очистить фильтр</button>
+								</div>
+								<div class="col-3"></div>
+								<div class="col-3"></div>
+								<div class="col-3 juc-cent">
+									<button class="btn-apply" type="submit">Применить фильтр</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="product">
+		<div class="container">
+
+			<div class="row--gap product--head">
+				<div class="col-6">
+					<div class="product__title">
+						<span class="product__title-titlle">Карточки товаров</span>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="product__link">
+						<a href="#" class="product-link__link">Ссылка в каталог</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="product__card">
+				<div class="container">
+					<div class="row">
+						<div class="col-3">
+							<div class="product__block product__block-first">
+								<div class="product__mark">
+									<span>Mark</span>
+								</div>
+								<div class="product__title">
+									<a href="#" class="title-tire">Антифриз Fosser Antifreeze<br>
+									FA 12 Readymix 1 л Concentrat, Germany</a>
+								</div>
+								<div class="product__rading">
+									<span class="product__rating"></span>
+									<a href="#" class="reviews">Отзывы (10)</a>
+									<span class="product__availability">В наличии: 24 шт.</span>
+								</div>
+								<div class="product__main">
+									<div class="product__season-left">
+										<span class="product__summer">
+											<span class="product__icons-summer"></span>
+											<span class="product__season-inf summer-inf">Летняя</span>
+										</span>
+										<span class="product__car">
+											<span class="product__icons-car"></span>
+											<span class="product__season-inf inf-car">легковая</span>
+										</span>
+										<span class="product__new">
+											<span class="product__icons-new"></span>
+											<span class="product__season-inf new-inf">новая</span>
+										</span>
+									</div>
+									<div class="product__main-tire product__main-tire-first">
+										<img src="img/tire-1.png" alt="tire">
+									</div>
+								</div>
+								<div class="product__shares">
+									<span class="product__shares--wid-hei product__shares--news">
+										Новинка
+									</span>
+									<span class="product__shares--wid-hei product__shares--news-hit">
+										Хит
+									</span>
+									<span class="product__shares--wid-hei product__shares--news-znizhka">
+										скидка
+									</span>
+								</div>
+								<div class="product__price">
+									<span class="product__price-price">599 <span>грн.</span></span>
+									<span class="product__znizhka">1 250 грн.</span>
+								</div>
+								<div class="product__btn">
+									<button>купить товар</button>
+								</div>
+								<div class="product__add">
+									<a href="#" class="product__compare">Сравнить товар</a>
+									<a href="#" class="product__favorites">В избранное</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-3">
+							<div class="product__block product__block-2">
+								<div class="product__mark">
+									<span>Mark</span>
+								</div>
+								<div class="product__title">
+									<a href="#" class="title-tire">Антифриз Fosser Antifreeze<br>
+									FA 12 Readymix 1 л Concentrat, Germany</a>
+								</div>
+								<div class="product__rading">
+									<span class="product__rating product__rating-three"></span>
+									<a href="#" class="reviews">Отзывы (10)</a>
+									<span class="product__availability">В наличии: 24 шт.</span>
+								</div>
+								<div class="product__main">
+									<div class="product__season-left">
+										<span class="product__summer">
+											<span class="product__icons-summer"></span>
+											<span class="product__season-inf summer-inf">Летняя</span>
+										</span>
+										<span class="product__new">
+											<span class="product__icons-new"></span>
+											<span class="product__season-inf new-inf">новая</span>
+										</span>
+									</div>
+									<div class="product__main-tire product__main-tire-2 ">
+										<img src="img/tire-2.png" alt="tire">
+									</div>
+								</div>
+								<div class="product__shares product__shares-two">
+									<span class="product__shares--wid-hei product__shares--news">
+										Новинка
+									</span>
+									<span class="product__shares--wid-hei product__shares--news-hit">
+										Хит
+									</span>
+								</div>
+								<div class="product__price">
+									<span class="product__price-price">599 <span>грн.</span></span>
+									<span class="product__znizhka">1 250 грн.</span>
+								</div>
+								<div class="product__btn">
+									<button>купить товар</button>
+								</div>
+								<div class="product__add">
+									<a href="#" class="product__compare">Сравнить товар</a>
+									<a href="#" class="product__favorites">В избранное</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-3">
+							<div class="product__block product__block-there">
+								<div class="product__mark">
+									<span>Mark</span>
+								</div>
+								<div class="product__title">
+									<a href="#" class="title-tire">Антифриз Fosser Antifreeze<br>
+									FA 12 Readymix 1 л Concentrat, Germany</a>
+								</div>
+								<div class="product__rading">
+									<span class="product__rating product__rating-none"></span>
+									<a href="#" class="reviews">Отзывы (10)</a>
+									<span class="product__availability">В наличии: 24 шт.</span>
+								</div>
+								<div class="product__main">
+									<div class="product__season-left">
+										<span class="product__summer">
+											<span class="product__icons-summer"></span>
+											<span class="product__season-inf summer-inf">Летняя</span>
+										</span>
+										<span class="product__car">
+											<span class="product__icons-car"></span>
+											<span class="product__season-inf inf-car">легковая</span>
+										</span>
+										<span class="product__new">
+											<span class="product__icons-new"></span>
+											<span class="product__season-inf new-inf">новая</span>
+										</span>
+									</div>
+									<div class="product__main-tire product__main-tire-first">
+										<img src="img/tire-3.png" alt="tire">
+									</div>
+								</div>
+								<div class="product__shares">
+									<span class="product__shares--wid-hei product__shares--news">
+										Новинка
+									</span>
+								</div>
+								<div class="product__price">
+									<span class="product__price-price">9 570 <span>грн.</span></span>
+									<span class="product__znizhka">11 250 грн.</span>
+								</div>
+								<div class="product__btn">
+									<button>купить товар</button>
+								</div>
+								<div class="product__add">
+									<a href="#" class="product__compare">Сравнить товар</a>
+									<a href="#" class="product__favorites">В избранное</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-3">
+							<div class="product__block product__block-last">
+								<div class="product__mark">
+									<span>Mark</span>
+								</div>
+								<div class="product__title">
+									<a href="#" class="title-tire">Антифриз Fosser Antifreeze
+									</div>
+									<div class="product__rading">
+										<span class="product__rating"></span>
+										<a href="#" class="reviews">Отзывы (10)</a>
+										<span class="product__availability">В наличии: 24 шт.</span>
+									</div>
+									<div class="product__main">
+										<div class="product__season-left">
+											<span class="product__summer">
+												<span class="product__icons-summer"></span>
+												<span class="product__season-inf summer-inf">Летняя</span>
+											</span>
+											<span class="product__car">
+												<span class="product__icons-car"></span>
+												<span class="product__season-inf inf-car">легковая</span>
+											</span>
+										</div>
+										<div class="product__main-tire product__main-tire-first">
+											<img src="img/tire-4.png" alt="tire">
+										</div>
+									</div>
+									<div class="product__price">
+										<span class="product__price-price">599 <span>грн.</span></span>
+									</div>
+									<div class="product__btn">
+										<button>купить товар</button>
+									</div>
+									<div class="product__add">
+										<a href="#" class="product__compare">Сравнить товар</a>
+										<a href="#" class="product__favorites">В избранное</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!--popap-->
+
+			<div id="form-popup" class="white-popup mfp-hide d-flex juc-cent alig-items">
+
+				<div class="d-flex popap__admin-col popap__admin-padding-rel">
+					<p style="text-align: right;"><a class="popup-modal-dismiss form--admin-mobile" href="#"></a></p>
+					<div class = 'block-popap-left'>
+						<h2 class='title-popap'>Вход в личный кабинет</h2>
+						<form id="form__admin" class = 'form-entrance'>
+							<label class = 'label-mail-entrance' for = 'mail-entrance'>Ваш email</label>
+							<input type = 'text' name='email' id = 'mail-entrance' class = 'mail-entrance' placeholder = 'alextod988@gmail.com'>
+							<label class = 'label-mail-password' for = 'entrancel-password'>Пароль</label>
+							<input type = 'password' id = 'entrancel-password' name = 'password' class = 'entrancel-password' placeholder = '*************'> 
+							<label class = 'remember-me'>
+								<input type = 'checkbox'>
+								<i class = 'checkbox-i'></i>Запомнить меня</label>
+								<div class = 'block-registration'>
+									<a href = '#' class= 'Forgot_your_password'>Забыли пароль?</a>
+									<a href = '#' class = 'registration'>Регистрация</a>
+								</div>
+								<input type = 'submit' class = 'btn-Login_to-your-account' value = 'Войти в личный кабинет'>
+							</form>
+						</div>
+						<div class = 'block-popap-right'>
+							<h2 class='title-popap'>Войти с помощью</h2>
+							<a href = '#' class = 'social-entrance entrance-fb'>Facebook</a>
+							<a href = '#' class = 'social-entrance entrance-tw'>Twitter</a>
+							<a href = '#' class = 'social-entrance entrance-go'>Google</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="form-popup-mobile" class="white-popup mfp-hide d-flex juc-cent alig-items">
+					<div class="d-flex popap__admin-col popap__admin-padding-rel">
+						<p style="text-align: right;"><a class="popup-modal-dismiss" href="#"></a></p>
+						<div class='mobille__popap-container'>
+							<h2 class='title-popap'>Перезвоните мне</h2>
+							<form id="form__mobile" class='form-popap-mobile'><label for='mob'>Номер телефона</label>
+								<input type='text' name="mobile" class='input-popap-mobile' id="phone" placeholder='+38(0__)___-__-__'>
+								<div class='btn-block-pop'>
+									<button type='submit' class='submit-popap-mobile' >Перезвоните мне</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="pop_up">
+					<p>Вы успешно подписаны</p>
+				</div>
+				<!-- end popap-->
+
+			</div>
+
+			<div id="my-footer">
+
+				<footer class="footer">
+					<div class="container">
+						<div class="row--gap footer_margin-botom">
+							<div class="col-5">
+								<div class="footer__head">
+									<span>Блок 1</span>
+								</div>
+								<div class="footer__novin footer__ma-lef">
+									<span>Будьте в курсе новостей и новинок!</span>
+								</div>
+								<div class="footer__rasilka footer__ma-lef">
+									<h2 class="footer__rosil-h2">Подписывайтесь на рассылку</h2>
+								</div>
+								<form id="fotter__form-mail" class="footer__form-email">
+									<p class="footer__heigh-email">
+									<input type="text" name="email" class="footer_email" placeholder="Укажите свой email для подписки"><!--
+								--><button type="submit" class="footer__email-btn">подписаться</button>
+							</p>
+						</form>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-2">
+						<div class="footer__head">
+							<span>Блок ссылок 1</span>
+						</div>
+						<div class="footer__block-link">
+							<div class="footer__link"><a href="#">Ссылка 1</a></div>
+							<div class="footer__link"><a href="#">Ссылка 2</a></div>
+							<div class="footer__link"><a href="#">Ссылка 3</a></div>
+							<div class="footer__link"><a href="#">Ссылка 4</a></div>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="footer__head">
+							<span>Блок 2</span>
+						</div>
+						<div class="footer__block-link">
+							<div class="footer__link"><a href="#">Ссылка 1</a></div>
+							<div class="footer__link"><a href="#">Ссылка 2</a></div>
+							<div class="footer__link"><a href="#">Ссылка 3</a></div>
+							<div class="footer__link"><a href="#">Ссылка 4</a></div>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="footer__head">
+							<span>Блок ссылок 3</span>
+						</div>
+						<div class="footer__block-link">
+							<div class="footer__link"><a href="#">Ссылка 1</a></div>
+							<div class="footer__link"><a href="#">Ссылка 2</a></div>
+							<div class="footer__link"><a href="#">Ссылка 3</a></div>
+							<div class="footer__link"><a href="#">Ссылка 4</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row--gap footer-bottom">
+					<div class="col-5 footer__flex-ali-ce">
+						<div class="footer__img-logo-footer">
+							<a href="#">
+								<img src="img/Fotter-Test.png" alt="">
+							</a>
+						</div>
+						<div class="footer_info-website">
+							<span>© Copyrith 2017. Тестовое задание Wezom</span>
+						</div>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-3">
+						<div class="footer__wrapper-social">
+							<div class="footer__social">
+								<a href="#" class="footer__link-social"></a>
+							</div>
+							<div class="footer__social">
+								<a href="#" class="footer__link-social"></a>
+							</div>
+							<div class="footer__social">
+								<a href="#" class="footer__link-social"></a>
+							</div>
+							<div class="footer__social">
+								<a href="#" class="footer__link-social active"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-2 d-flex footer__margin-top">
+						<div class="footer__img-w">
+							<a href="#">
+								<img src="img/img-W-footer.png" alt="">
+							</a>
+						</div>
+						<div class="footer__wezom-agensu">
+							<p>Разработка тестового</p>
+							<p>Wezom Agency</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+
+	</div>
+	
+</div>
+
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+<script src="libs/Magnific-Popup-master/js/jquery.magnific-popup.min.js"></script>
+<script src="libs/jquery.validate/jquery.validate.min.js"></script>
+<script src="libs/jquery.maskedinput/jquery.inputmask.bundle.js"></script>
+
+</body>
+</html>
